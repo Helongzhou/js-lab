@@ -29,7 +29,7 @@ import { Route } from 'react-router-dom'
                 <button
                 type='button'
                 onClick={() => {
-                    this.userStore.data = this.data;    
+                    this.userStore.data = this.data;                      
                     history.push('/result'); 
                 }}
                 >

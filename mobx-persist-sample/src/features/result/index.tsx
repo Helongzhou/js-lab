@@ -15,8 +15,9 @@ import { UserDataStore } from '../../stores/userDataStore';
     render() {
         return (
             <div>
-                Your data that you entered is "{this.userStore.data}".
-          </div>
+                Your data that you entered is "{this.userStore.data }".
+                <button onClick={() => alert(this.userStore.data)}> View User Data </button >
+            </div>
         );
     }
 }
