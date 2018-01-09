@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Provider } from 'mobx-react';
 import './App.css';
-import { UserDataStore } from './stores/userDataStore';
+import { userDataStore } from './stores/userDataStore';
 import Entry from './features/entry';
 import Result from './features/result';
 import { Switch, Route } from 'react-router-dom';
@@ -17,7 +17,7 @@ class App extends React.Component {
           <h2>Welcome to React</h2>
         </div>
         <div id="page-content">        
-          <Provider userStore={UserDataStore} >
+          <Provider userStore={userDataStore} >
               <Switch>
                 <Route exact={true} path="/" component={Entry} />
                 <Route path='/result' component={Result} />

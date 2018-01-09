@@ -6,8 +6,7 @@ export class UserDataStore {
 }
 
 const hydrate = create({
-    storage: localStorage,
-    jsonify: false  
+    storage: localStorage
   })
   
   export const userDataStore = new UserDataStore()
